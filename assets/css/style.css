@@ -4,12 +4,54 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
+.backColor {
+    color: #fec544;
+}
 /*=============================================
 NAVIGATION
 =============================================*/
 header {
     width: 100%;
     background: #0a101e;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    
+}
+
+.navbar-nav li {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-weight: 500;
+}
+
+.line-nav {
+    color: white;
+    font-weight: 900;
+}
+
+.number-nav {
+    font-weight: 500;
+}
+
+.logo img {
+    width: 200px;
+    padding: 10px;
+    margin-left: 100px;
 }
