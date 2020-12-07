@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
+    <script src="./assets/js/menu.js"></script>
     <title>Portafolio Alexander Villabon</title>
 </head>
+
 <body>
-<!--=====================================
+    <!--=====================================
 NAVIGATION
 ======================================-->
     <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="./assets/img/alexlogo.png" alt="">
-                </div>
-                <ul class="navbar-nav">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">ACERCA DE</a></li>
-                    <li><a href="#">CURRICULUM</a></li>
-                    <li><a href="#">PORTAFOLIO</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                    <li><span class="line-nav">|</span></li>
-                </ul>
-                <div><i class="fas fa-phone-alt" style="color: white"></i></div>
-                <div class="number-nav backColor">+57 315 563 3217</div>
-            </nav>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="./assets/img/alexlogo.png" alt=""></a>
+            </div>
+            <input type="checkbox" id="btn-menu-slide">
+            <label for="btn-menu-slide"><i class="fas fa-align-justify btn-menu"></i></label>
+            <ul class="navbar-nav">
+                <li><a href="#"><span class="backColor">INICIO</span></a></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">CURRICULUM</a></li>
+                <li><a href="#">PORTAFOLIO</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><span class="line-nav">|</span></li>
+            </ul>
+            <div class="number-nav backColor"><i class="fas fa-phone-alt icon-slide"></i> +57 315 563 3217</div>
+        </nav>
     </header>
-<!--=====================================
-NAVIGATION
+    <!--=====================================
+SLIDE
 ======================================-->
+    <section>
+        <div class="banner">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 banner-text">
+                            <h3 class="backColor">Hola yo soy</h3>
+                            <h1>ALEXANDER <span>VILLABON</span></h1>
+                            <h2>Web Developer</h2>
+                            <div class="buttom-slide backColor-buttom">
+                                <a href="#">Hire Me</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 banner-img">
+                            <img src="assets/img/hero-img.jpg" alt="Alexander Villabon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 </body>
+
 </html>

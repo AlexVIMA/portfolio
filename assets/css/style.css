@@ -11,12 +11,30 @@
 .backColor {
     color: #fec544;
 }
+
+body {
+    background: #0a101e;
+}
+
+.backColor-buttom {
+    background: #fec544;
+}
+
+
 /*=============================================
 NAVIGATION
 =============================================*/
+
 header {
+    position: fixed;
     width: 100%;
     background: #0a101e;
+    top: 0;
+    z-index: 200;
+}
+
+header label {
+    display: none;
 }
 
 .navbar {
@@ -28,7 +46,6 @@ header {
 
 .navbar-nav {
     display: flex;
-    
 }
 
 .navbar-nav li {
@@ -47,7 +64,7 @@ header {
 }
 
 .number-nav {
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .logo img {
@@ -55,3 +72,154 @@ header {
     padding: 10px;
     margin-left: 100px;
 }
+
+nav div i {
+    color: white;
+    margin: 0;
+}
+
+.btn-menu {
+    display: none;
+    color: white;
+}
+
+
+/*=============================================
+SLIDE
+=============================================*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    background-image: url(../img/background-image.jpg);
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-text {
+    position: relative;
+    top: 200px;
+}
+
+.banner-text h3 {
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0 0 30px 0;
+}
+
+.banner-text h1 {
+    font-size: 95px;
+    color: white;
+    font-weight: 900;
+}
+
+.banner-text h1 span {
+    display: block;
+}
+
+.banner-text h2 {
+    color: #a9adb8;
+    font-size: 36px;
+    margin: 20px;
+}
+
+.banner-img img {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50%;
+}
+
+.buttom-slide {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.icon-slide {
+    margin-right: 10px;
+}
+
+#btn-menu-slide {
+    display: none;
+}
+
+
+/*=============================================
+MEDIA QUERY DEVICE MEDIUM   
+=============================================*/
+
+@media (max-width: 768px) {
+    .banner-img img {
+        display: none;
+    }
+    .navbar ul.navbar-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #0a101e;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .navbar ul.navbar-nav li span {
+        color: white;
+    }
+    .navbar ul.navbar-nav li span.line-nav {
+        display: none;
+    }
+    .navbar ul.navbar-nav li {
+        margin: 0;
+        padding: 20px 0 0 30px;
+    }
+    div.number-nav {
+        display: none;
+    }
+    .banner-text h1 {
+        font-size: 70px;
+        color: white;
+        font-weight: 900;
+    }
+    .btn-menu {
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #btn-menu-slide:checked~ul.navbar-nav {
+        margin: 0;
+    }
+    .logo img {
+        width: 200px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    header label {
+        display: block;
+    }
+    #btn-menu-slide {
+        display: none;
+    }
+}
+
+
+/*=============================================
+MEDIA QUERY DEVICE LARGE 
+=============================================*/
+
+@media (max-width: 1200px) {}
