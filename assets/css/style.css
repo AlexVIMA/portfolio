@@ -20,6 +20,14 @@ body {
     background: #fec544;
 }
 
+.space-top {
+    height: 100px;
+}
+
+.space-top2 {
+    height: 25px;
+}
+
 
 /*=============================================
 NAVIGATION
@@ -89,12 +97,12 @@ SLIDE
 =============================================*/
 
 .banner {
-    position: relative;
     width: 100%;
     height: 100vh;
     background: grey;
     background-image: url(../img/background-image.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .overlay {
@@ -146,6 +154,16 @@ SLIDE
     padding: 15px 60px;
     border-radius: 30px;
     cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.buttom-slide:hover {
+    color: black;
+}
+
+.buttom-slide .backColor-buttom:hover {
+    box-shadow: black;
 }
 
 .icon-slide {
@@ -154,6 +172,244 @@ SLIDE
 
 #btn-menu-slide {
     display: none;
+}
+
+
+/*=============================================
+SOCIAL NETWORKS  
+=============================================*/
+
+.slide-social {
+    background: #0a101e;
+    border: 0.5px solid #3f4551;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.social-btn {
+    display: inline-block;
+    border-radius: 100px;
+    background: #070d1b;
+    border: 0.5px solid #3f4551;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+a.social-btn:hover {
+    color: #fec544;
+}
+
+
+/*=============================================
+ABOUT
+=============================================*/
+
+.primary-title {
+    text-align: center;
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: 41px;
+}
+
+.about-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    z-index: 10;
+    line-height: 1;
+}
+
+.about-subtitle {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    font-size: 90px;
+    font-weight: 700;
+    color: rgba(21, 27, 41, 0.5);
+    margin: 0;
+    width: 100%;
+}
+
+.about-title::before {
+    content: "";
+    position: absolute;
+    background-color: #3f4551;
+    width: 170px;
+    height: 2px;
+    bottom: -16px;
+    left: 42.5%;
+}
+
+.about-title::after {
+    content: "";
+    position: absolute;
+    background-color: #fec544;
+    width: 70px;
+    height: 2px;
+    bottom: -16px;
+    left: 47%;
+}
+
+.img-about {
+    padding-right: 30px;
+}
+
+.img-bg-about {
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+}
+
+.block-text-about {
+    padding-left: 30px;
+}
+
+.text-about-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.text-about-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fec544;
+    margin-bottom: 18px;
+}
+
+.text-about-p {
+    font-weight: 300;
+    color: #a9adb8;
+    margin-bottom: 18px;
+    line-height: 1.6em;
+}
+
+.text-about-date {
+    color: #a9adb8;
+}
+
+.space-top-about {
+    height: 40px;
+}
+
+.text-about-date th {
+    padding-left: 0;
+    text-align: left;
+}
+
+.text-about-date td {
+    padding-left: 40px;
+}
+
+
+/*=============================================
+RESUME  
+=============================================*/
+
+.bg-section {
+    background: #070d1b;
+}
+
+.space-top3 {
+    height: 50px;
+}
+
+.st-resume-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.st-resume-heading-title {
+    margin: 0;
+    margin-left: 30px;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+
+.st-resume-timeline-wrap {
+    padding-left: 40px;
+    margin-left: 20px;
+    border-left: 1px solid #232935;
+}
+
+.st-resume-timeline-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fec544;
+    margin-top: -7px;
+    margin-bottom: 8px;
+}
+
+.st-resume-timeline-duration {
+    font-size: 18px;
+    margin-bottom: 21px;
+    color: #a9adb8;
+}
+
+.st-resume-timeline-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 19px;
+    color: white;
+}
+
+.st-resume-timeline-text {
+    font-weight: 300;
+    color: #a9adb8;
+    margin-bottom: 18px;
+    line-height: 1.6em;
+}
+
+
+/*=============================================
+PORTFOLIO  
+=============================================*/
+
+.st-portfolio {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 7px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/*=============================================
+CONTACT 
+=============================================*/
+
+.st-contact-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -6px;
+    margin-bottom: 22px;
+    color: white;
+    text-align: center;
+}
+
+
+/*=============================================
+FOOTER
+=============================================*/
+
+.st-copyright-wrap {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
@@ -215,6 +471,9 @@ MEDIA QUERY DEVICE MEDIUM
     #btn-menu-slide {
         display: none;
     }
+    .slide-social {
+        display: none;
+    }
 }
 
 
@@ -222,4 +481,128 @@ MEDIA QUERY DEVICE MEDIUM
 MEDIA QUERY DEVICE LARGE 
 =============================================*/
 
-@media (max-width: 1200px) {}
+@media (max-width: 992px) {
+    .banner-img img {
+        display: none;
+    }
+    .navbar ul.navbar-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #0a101e;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .navbar ul.navbar-nav li span {
+        color: white;
+    }
+    .navbar ul.navbar-nav li span.line-nav {
+        display: none;
+    }
+    .navbar ul.navbar-nav li {
+        margin: 0;
+        padding: 20px 0 0 30px;
+    }
+    div.number-nav {
+        display: none;
+    }
+    .banner-text h1 {
+        font-size: 70px;
+        color: white;
+        font-weight: 900;
+    }
+    .btn-menu {
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #btn-menu-slide:checked~ul.navbar-nav {
+        margin: 0;
+    }
+    .logo img {
+        width: 200px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    header label {
+        display: block;
+    }
+    #btn-menu-slide {
+        display: none;
+    }
+    .slide-social {
+        display: none;
+    }
+}
+
+
+/*=============================================
+MEDIA QUERY DEVICE LARGE 
+=============================================*/
+
+@media (max-width: 1200px) {
+    .banner-img img {
+        display: none;
+    }
+    .navbar ul.navbar-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #0a101e;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .navbar ul.navbar-nav li span {
+        color: white;
+    }
+    .navbar ul.navbar-nav li span.line-nav {
+        display: none;
+    }
+    .navbar ul.navbar-nav li {
+        margin: 0;
+        padding: 20px 0 0 30px;
+    }
+    div.number-nav {
+        display: none;
+    }
+    .banner-text h1 {
+        font-size: 70px;
+        color: white;
+        font-weight: 900;
+    }
+    .btn-menu {
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #btn-menu-slide:checked~ul.navbar-nav {
+        margin: 0;
+    }
+    .logo img {
+        width: 200px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    header label {
+        display: block;
+    }
+    #btn-menu-slide {
+        display: none;
+    }
+    .slide-social {
+        display: none;
+    }
+}
+
+
+}
